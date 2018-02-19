@@ -143,6 +143,7 @@
  See "Image Pixel Size" above for more information on individual pixels.
  
  */
+#define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
 #include <stdlib.h>
