@@ -42,7 +42,7 @@ std::string ShaderManager::getFileContents(const std::string& filename) const{
     std::string contents;
     in.seekg(0, std::ios::end);
     auto length = in.tellg();
-    if (length != -1){
+    if ((long)length != -1){
       contents.resize(static_cast<unsigned int>(length));
       in.seekg(0, std::ios::beg);
       in.read(&contents[0], contents.size());
